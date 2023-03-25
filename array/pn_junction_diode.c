@@ -1,41 +1,34 @@
-/*pn junction biasing*/
 #include<stdio.h>
-#define SIZE 20
 int main()
 {
-	char arr[SIZE];
+	int arr[10] = {0,0,1,1,0,0,1,1};
+	int size = 8;
 	int i;
-	int start, end;
-	//clrscr();
-	printf("Enter the string containing p and n\n");
-	scanf("%s", arr);
-	printf("Entered string: \n");
-	for(i=0; arr[i]!='\0'; i++)
+	int start, end;	
+	for(i=0; i<size; i++)
 	{
-		printf("%c",arr[i]);
+		printf("%d ",arr[i]);
 	}
 	start = 0;
 	end = i-1;
 	while(start<end)
 	{
-		//printf("hi");
-		while(arr[start]=='p' && start<end)
+		while(arr[start]==0 && start<end)
 			start++;
-		while(arr[end]=='n' && start<end)
+		while(arr[end]==1 && start<end)
 			end--;
 
 		if(start<end)
 		{
-			arr[start] = 'p';
-			arr[end] = 'n';
+			arr[start] = 0;
+			arr[end] = 1;
 			start++;
 			end--;
 		}
 	}
 	printf("\n");
-	for(i=0; arr[i]!='\0'; i++)
+	for(i=0; i<size; i++)
 	{
-		printf("%c",arr[i]);
+		printf("%d ",arr[i]);
 	}
-	//getch();
 }

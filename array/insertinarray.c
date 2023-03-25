@@ -1,13 +1,10 @@
 /*Insert an integer in a specified position in an array*/
 #include <stdio.h>
-#include <stdlib.h>
-
 int main()
 {
 	int arr[50];
 	int i,j,pos,num;
 	int size;
-
 	printf("Enter the length of array\n");
 	scanf("%d", &size);
 	printf("Enter the elements of array one by one\n");
@@ -27,7 +24,6 @@ int main()
 		for(j=size; j>=pos; j--)
 		{
 			arr[j] = arr[j-1];
-			//printf("\nj=%d",j);
 		}
 		arr[pos-1] = num;
 	}

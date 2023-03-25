@@ -6,13 +6,10 @@ int main()
 	int mat[20][20];
 	int i,j;
 	int order;
-	//clrscr();
 	printf("Enter the order of the matrix\n");
 	scanf("%d",&order);
-	for(i=0; i<order; i++)
-	{
-		for(j=0; j<order; j++)
-		{
+	for(i=0; i<order; i++) {
+		for(j=0; j<order; j++) {
 			if(i==j)
 				mat[i][j] = 1;
 			else
@@ -20,13 +17,9 @@ int main()
 		}
 	}
 	printf("Identity Matrix\n");
-	for(i=0; i<order; i++)
-	{
+	for(i=0; i<order; i++) {
 		for(j=0; j<order; j++)
-		{
 			printf("%3d ", mat[i][j]);
-		}
 		printf("\n");
 	}
-	//getch();
 }

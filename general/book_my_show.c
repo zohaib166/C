@@ -4,6 +4,7 @@ void display_seats();
 int book_tickets();
 int cancel_tickets();
 void initialize();
+int check_seat_status();
 
 #define RESERVED -1
 #define FAILURE	0
@@ -24,7 +25,7 @@ int main()
 		printf("2. Book Ticket.\n");
 		printf("3. Cancel Ticket.\n");
 		printf("4. Exit.\n");
-		scanf("%d:	",&option);
+		scanf("%d",&option);
 		switch(option)
 		{
 			case 1:
@@ -33,7 +34,6 @@ int main()
 			case 2:
 			{
 				result = book_tickets();
-				//printf("here %d", result);
 				if(result==FAILURE)
 					printf("Booking Failed\n");
 				else
@@ -46,8 +46,7 @@ int main()
 				result = cancel_tickets();
 				if(result==FAILURE)
 					printf("Error in cancellation\n");
-				else
-				{
+				else {
 					printf("%d tickets cancelled successfully\n", result);
 					display_seats();
 				}

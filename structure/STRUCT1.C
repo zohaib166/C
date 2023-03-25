@@ -7,6 +7,7 @@ struct record {
 typedef struct record DATA;
 int main()
 {
+	
 	DATA student;
 	//clrscr();
 	printf("Enter student details:\n");

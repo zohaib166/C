@@ -5,19 +5,19 @@ int main()
     while(x<=4)
     {
         k=1;
-        while(k<=3)
+        while(k<=2)
         {
             i=1;
-           while(i<=8)
+           while(i<=4)
             {
                 j=1;
-                while(j<=4)
+                while(j<=2)
                 {
                     printf("#");
                     j++;
                 }
                 j=1;
-                while(j<=4)
+                while(j<=2)
                 {
                     printf(" ");
                     j++;
@@ -29,19 +29,19 @@ int main()
             k++;
         }
         k=1;
-        while(k<=3)
+        while(k<=2)
         {
             i=1;
-           while(i<=8)
+           while(i<=4)
             {
                 j=1;
-                while(j<=4)
+                while(j<=2)
                 {
                     printf(" ");
                     j++;
                 }
                 j=1;
-                while(j<=4)
+                while(j<=2)
                 {
                     printf("#");
                     j++;
