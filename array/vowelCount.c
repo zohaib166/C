@@ -3,8 +3,8 @@
 int main()
 {
 	char str[50] = "mathematical";
-	int vowel_count, i = 0;
-	while(str[i++]!='\0') {
+	int vowel_count=0, consonant_count=0, i = 0;
+	while(str[i]!='\0') {
         switch(str[i]) {
             case 'o':
             case 'O':
@@ -18,7 +18,14 @@ int main()
             case 'U':
                 vowel_count++;
                 break;
+            default:
+                if((str[i]>='a' && str[i]<='z') || (str[i]>='A' && str[i]<='Z')) {
+                    consonant_count++;
+                }
+                break;
         }
+        i++;
     }
     printf("Vowel Count: %d\n", vowel_count);
+    printf("Consonant Count: %d\n", consonant_count);
 }
