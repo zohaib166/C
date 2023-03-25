@@ -10,12 +10,12 @@ int main()
     {
         for(j=1;j<=rows-i+1;j++)
         {
-            printf(" ");
+            printf("  ");
         }
 
         for(j=1;j<=i+1;j++)
         {
-            printf("%d ",x);
+            printf("%3d ",x);
 
         }
         x=x*2;

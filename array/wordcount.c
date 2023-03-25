@@ -11,12 +11,10 @@ void main()
 	gets(str);
 	while(str[i]!='\0')
 	{
-		if(str[i]==' ' || str[i]=='\t')
-		{
+		if(str[i]==' ' || str[i]=='\t') {
 			state=out;
 		}
-		else if(state==out)
-		{
+		else if(state==out){
 			state=in;
 			count++;
 		}

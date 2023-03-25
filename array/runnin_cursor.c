@@ -27,6 +27,6 @@ void delay()
    int c = 1, d = 1;
 
    for ( c = 1 ; c <= 5000 ; c++ )
-       for ( d = 1 ; d <= 5000 ; d++ )
+       for ( d = 1 ; d <= 50000 ; d++ )
        {}
 }

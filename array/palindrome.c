@@ -3,12 +3,11 @@
 
 int main()
 {
-	char str[20] = "deld";
+	char str[20] = "madam";
 	int i,j=0;
 	int flag = 0;
 	for(i=0; str[i]!='\0';i++);
 	i--;
-	//printf("%c\n", str[i]);
 	for(; i>=0; i--)
 	{
 		if(str[i]!=str[j])

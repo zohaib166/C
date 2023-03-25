@@ -6,7 +6,6 @@ int main()
 {
 	int i, a[10], length=10;
 	int iter_count = 0;
-	clrscr();
 	printf("Enter 10 integers to be sorted:\n");
 	for(i=0; i<length; i++)
 		scanf("%d", &a[i]);
@@ -18,8 +17,7 @@ int main()
 		printf("%d ", a[i]);
 
 	printf("\nTotal Iterations=%d\n", iter_count);
-	//free(a);
-	getch();
+
 	return 0;
 }
 void insertion_sort(int *list, int size, int *O)

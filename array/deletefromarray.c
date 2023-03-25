@@ -1,7 +1,5 @@
-/*Insert an integer in a specified position in an array*/
+/*delete an element from a specified position in an array*/
 #include <stdio.h>
-#include <stdlib.h>
-
 int main()
 {
 	int arr[50];
@@ -27,10 +25,8 @@ int main()
 		for(i=pos; i<size; i++)
 		{
 			arr[i-1] = arr[i];
-			//printf("\nj=%d",j);
 		}
 		size = size-1;
-		//arr[pos-1] = num;
 	}
 	else if(pos == size)
     {

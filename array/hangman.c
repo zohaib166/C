@@ -18,7 +18,7 @@ void main()
     for(i=0;i<10;i++)
     {
         fgets(buff[i], 255, (FILE*)fptr);
-        printf("%s", buff[i]);
+        //printf("%s", buff[i]);
     }
     time_t t;
     srand((unsigned) time (&t));
@@ -29,10 +29,10 @@ void main()
 	int success = 0;
 	char x;
 	strcpy(hidden,buff[movie_index]);
+	fputs(hidden, stdout);
 	len = strlen(hidden);
 	printf("Start guessing the letters\n");
 	printf("You have %d attempts\n", attempts);
-	//goto(10,0);
 	for(i=0; i<len; i++)
 	{
 	    if(hidden[i]==' '){
@@ -47,9 +47,8 @@ void main()
 	printf("\n");
 	while(attempts>0)
 	{
-
 		printf("\n");
-		x = getch();
+		x = getc(stdin);
 		flag = 0;
 		count=0;
 		for(i=0; i<len; i++)

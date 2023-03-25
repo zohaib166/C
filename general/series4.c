@@ -1,7 +1,5 @@
 /* sum of the series 1-2+3-4+5-.....n*/
-
 #include <stdio.h>
-
 int main()
 {
 	int n = 25;
@@ -23,6 +21,5 @@ int main()
 		nt++;
 		i++;
 	}
-	
 	printf("%d", sum);
 }
