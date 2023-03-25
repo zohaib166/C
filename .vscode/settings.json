@@ -18,6 +18,8 @@
         "SELECT~1.C": "cpp",
         "INSERT~1.C": "cpp",
         "BUBBLE_S.C": "cpp",
-        "JOINSTR.C": "cpp"
+        "JOINSTR.C": "cpp",
+        "QUICK_~1.C": "cpp",
+        "quick.C": "cpp"
     }
 }
