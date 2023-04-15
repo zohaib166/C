@@ -17,7 +17,6 @@ int main()
 		{
 			if(j%i==0)
 			{
-				//printf("1.i=%d, j=%d\n",i,j);
 				flag = 0;
 				break;
 			}

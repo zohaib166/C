@@ -3,33 +3,27 @@
 #include <string.h>
 int main()
 {
-	char str1[21], str2[11];
-	int len1,len2;
-	short int i=0, j=0, flag = 0, count = 0, location;
-	printf("Enter a string(20 characters max)\n");
-	scanf("%s", str1);
-	printf("Enter a substring(10 characters max)\n");
-	scanf("%s", str2);
-	len1 = strlen(str1);
-	len2 = strlen(str2);
-	while(i<len1)
-	{
-		j=0;
-		count = 0;
-		while(str1[i] == str2[j] && i<len1 && j<len2) {
-			i++; j++;
-			count++;
-		}
-		if(count == len2){
-			location = i-len2+1;
-			flag = 1;
-			break;
-		}
-		i++;
-	}
-	if(flag==1)
-		printf("Substring is present at position - %d\n", location);
-	else
-		printf("Substring is not present\n");
+    char str1[50] = "mathematics", str2[50] = "ma";
+    
+    int len1 = strlen(str1);
+    int len2 = strlen(str2);
+    int flag;
+    for(int i=0;i<(len1-len2);i++) {
+        flag = 1;
+        for(int j=0;j<len2;j++) {
+            if(str1[i+j]!=str2[j]) {
+                flag = 0;
+                break;
+            }
+        }
+        if(flag==1) {
+            printf("The substring exists at %d position\n", i);
+        }
+    }
+    if(flag==0) {
+        printf("Substring not found\n");
+    }
 
+    return 0;
 }
+

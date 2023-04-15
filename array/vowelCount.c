@@ -2,7 +2,7 @@
 #include<stdio.h>
 int main()
 {
-	char str[50] = "mathematical";
+	char str[50] = "aeiouAEIOU";
 	int vowel_count=0, consonant_count=0, i = 0;
 	while(str[i]!='\0') {
         switch(str[i]) {

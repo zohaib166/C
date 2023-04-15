@@ -18,7 +18,6 @@ void main()
     for(i=0;i<10;i++)
     {
         fgets(buff[i], 255, (FILE*)fptr);
-        //printf("%s", buff[i]);
     }
     time_t t;
     srand((unsigned) time (&t));
@@ -47,8 +46,8 @@ void main()
 	printf("\n");
 	while(attempts>0)
 	{
-		printf("\n");
 		x = getc(stdin);
+		fflush(stdin);
 		flag = 0;
 		count=0;
 		for(i=0; i<len; i++)
